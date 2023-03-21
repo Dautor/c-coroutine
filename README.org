@@ -1,0 +1,36 @@
+
+* Coroutine implementation in C
+This project is written for =AMD64= platform and uses some specifics of the platform in its implementation.
+
+It was tested on =FreeBSD 13.1= and =Archlinux=.
+
+** BUILDING
+The build script expects =clang= to be installed.
+However, It should work just fine when compiling using =gcc=.
+
+Run =./build.sh=.
+It will produce binary executable in =build/example=.
+
+** RUNNING
+Run =build/example=.
+
+Expected output:
+#+BEGIN_SRC
+a
+	b
+		c
+a
+	b
+		c
+		b
+	a
+a
+	a
+	b
+		a
+		b
+	a
+		a
+		d
+		d
+#+END_SRC
